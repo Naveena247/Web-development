@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+li {
+  float: center;
+  display:inline-block;
+}
+
+li a {
+  text-decoration:none;
+  color:black;
+  width:400px;
+  display: block;
+  padding: 15px;
+  background-color:lightblue;
+  transition:0.10s;
+}
+.mySlides {display:none;}
+.mySlides
+{
+  float: right;
+}
+h2{
+  font-size: 30px;
+  color: brown;
+}
+p{
+  font-size: 25px;
+  color: blue;
+}
+body{
+  background-image:url("https://wallpaperaccess.com/full/5960434.jpg");
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="home.html"><b>Home</b></a></li>
+  <li><a href="contactus.html"><b>Contact us</b></a></li>
+  <li><a href="log.html"><b>Login</b></a></li>
+</ul>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://www.insidedogsworld.com/wp-content/uploads/2016/03/Dog-Pictures.jpg" style="width:50%">
+  <img class="mySlides" src="https://www.readersdigest.ca/wp-content/uploads/2019/11/cat-10-e1573844975155.jpg" style="width:51%">
+  <img class="mySlides" src="https://inspirationseek.com/wp-content/uploads/2016/02/Cute-Dog-Images.jpg" style="width:55%">
+  <img class="mySlides" src="http://2.bp.blogspot.com/-fQiZkz9Zlzg/T_xe2X2Ia3I/AAAAAAAAA0Q/VPS8Mb8xtIQ/s1600/cat+15.jpg" style="width:50%">
+  <img class="mySlides" src="https://inspirationseek.com/wp-content/uploads/2016/02/Cute-Dog-Photography.jpg" style="width:55%">
+  <img class="mySlides" src="https://inspirationseek.com/wp-content/uploads/2016/02/Cute-Dog-Photo.jpg" style="width:55%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); 
+}
+</script>
+<br><br><br><br><br><br>
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2><u>PET HUB</u></h2>
+  <p style="color:black"><i>MAKE YOUR PETS HAPPY</i></p>
+  <p>We are very excited that you have chosen to bring your dog(or)cat to our store.We work will all breeds and types of dogs,and we have an indoor playground and a large front yard.</p>
+</section>
+</body>
+</html>
